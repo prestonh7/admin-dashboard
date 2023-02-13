@@ -9,7 +9,7 @@ ul {
 
 body {
     display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template: 1fr 5fr / 1fr 4fr 1fr;
     height: 100vh;
     width: 100vw;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
 }
 
 .content {
@@ -34,7 +34,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));;
 }
@@ -43,4 +43,5 @@ body {
     border-radius: 10px;
     background-color: white;
     box-shadow: 1px 1px 5px lightgray;
+    padding: 1em;
 }
