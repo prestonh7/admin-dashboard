@@ -1,3 +1,8 @@
+:root {
+    --blue: #3b82f6;
+    --content-background: #e2e8f0;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,7 +18,7 @@ body {
     grid-template: 1fr 5fr / 1fr 4fr 1fr;
     height: 100vh;
     width: 100vw;
-    background-color: #3b82f6;
+    background-color: var(--blue);
 }
 
 .sidebar {
@@ -26,10 +31,32 @@ body {
 .header {
     grid-column: 2 / 4;
     background-color: white;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.searchbar {
+    background-color: var(--content-background);
+    border: none;
+    border-radius: 10px;
+    height: 2em;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .content {
-    background-color: #eff6ff;
+    background-color: var(--content-background);
     grid-column: 2 / 3;
     padding: 1em;
 }
@@ -51,7 +78,7 @@ body {
 
 .announcements {
     padding: 1em;
-    background-color: #eff6ff;
+    background-color: var(--content-background);
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     font-size: .8em;
@@ -71,4 +98,38 @@ body {
 
 .announcements ul li:last-child {
     border-bottom: none;
+}
+
+.header-buttons button {
+  align-items: center;
+  appearance: button;
+  background-color: var(--blue);
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out, ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.header-buttons button:active {
+  background-color: #006AE8;
+}
+
+.header-buttons button:hover {
+  background-color: #1C84FF;
 }
