@@ -28,6 +28,21 @@ body {
     grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));;
 }
 
+.nav ul {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.nav img, .options img {
+    height: 1em;
+    width: auto;
+    stroke: white;
+}
+
 .header {
     grid-column: 2 / 4;
     background-color: white;
