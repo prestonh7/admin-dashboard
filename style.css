@@ -54,5 +54,21 @@ body {
     background-color: #eff6ff;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    font-size: .9em;
+    font-size: .8em;
+}
+
+.announcements ul {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px lightgray;
+    padding: 2em;
+}
+
+.announcements ul li {
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+.announcements ul li:last-child {
+    border-bottom: none;
 }
