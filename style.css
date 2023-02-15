@@ -40,7 +40,6 @@ body {
 .nav img, .options img {
     height: 1em;
     width: auto;
-    stroke: white;
 }
 
 .header {
@@ -50,21 +49,50 @@ body {
     grid-template: 1fr 1fr / 3fr 1fr;
 }
 
-.search-bar {
+.searchArea img {
+    height: 1.7em;
+    width: auto;
+    padding: 1em;
+}
+
+.searchArea {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    flex-direction: column;
+    align-items: center;
 }
 
-.searchbar {
+.searchBar {
     background-color: var(--content-background);
     border: none;
     border-radius: 10px;
     height: 2em;
+    flex: 1;
 }
 
-.header-buttons {
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications {
+    height: 1.7em;
+    width: auto;
+}
+
+.profilePicture {
+    height: 4.5em;
+    width: auto;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+}
+
+.headerButtons {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -115,7 +143,7 @@ body {
     border-bottom: none;
 }
 
-.header-buttons button {
+.headerButtons button {
   align-items: center;
   appearance: button;
   background-color: var(--blue);
@@ -141,10 +169,10 @@ body {
   touch-action: manipulation;
 }
 
-.header-buttons button:active {
+.headerButtons button:active {
   background-color: #006AE8;
 }
 
-.header-buttons button:hover {
+.headerButtons button:hover {
   background-color: #1C84FF;
 }
