@@ -145,6 +145,20 @@ body {
     box-shadow: 1px 1px 5px lightgray;
     padding: 2em;
     border-left: 4px solid orange;
+    min-height: 250px;
+    display: grid;
+    align-items: center;
+}
+
+.project ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project img {
+    width: 1.5em;
+    height: auto;
+    margin-left: 5px;
 }
 
 .announcementsContent {
