@@ -13,6 +13,11 @@ ul {
     list-style-type: none;
 }
 
+.nav a:link, .nav a:visited, .nav a:hover, .nav a:focus, .nav a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 body {
     display: grid;
     grid-template: 1fr 5fr / 1fr 4fr 1fr;
@@ -142,15 +147,23 @@ body {
     border-left: 4px solid orange;
 }
 
-.announcements {
+.announcementsContent {
     padding: 1em;
     background-color: var(--content-background);
     grid-column: 3 / 4;
     grid-row: 2 / 3;
+}
+
+.announcementsContent h4, .content h4 {
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+.announcements {
     font-size: .8em;
 }
 
-.announcements ul {
+.announcements ul, .trending {
     border-radius: 10px;
     background-color: white;
     box-shadow: 1px 1px 5px lightgray;
@@ -164,6 +177,23 @@ body {
 
 .announcements ul li:last-child {
     border-bottom: none;
+}
+
+.trending img {
+    height: 3em;
+    width: auto;
+}
+
+.trending ul li a {
+    display: grid;
+    grid-template: 1fr / 1fr 3fr;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.trending ul li a div {
+    grid-column: 2 / 3;
 }
 
 .headerButtons button {
